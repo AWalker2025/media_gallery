@@ -44,7 +44,7 @@ a.nav-link.logo {
   font-weight: 900; 
 }
 a#trigram { 
-  display: none;  
+   display:inherit;
 }
 a#trigram::before { 
   content: '\2630'; 
@@ -53,6 +53,36 @@ a#trigram::before {
   top: -.5rem; 
   right: 0; 
 }
+
+@media screen and (max-width: 990px) {
+  .nav-wrap {
+    display:none;
+  }
+}
+.nav-wrap.mobile {
+  position: absolute;
+  z-index: 10;
+  top: 7rem;
+  right: 0;
+  width: 100%;
+  padding: 0 2rem 2rem 2rem;
+  background: var(--ltmid);
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  .nav-wrap.mobile a {
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding: 2rem 2rem;
+    margin: 0;
+  }
+  .nav-wrap.mobile a:hover {
+    background-color: var(--light);
+}
+
 main {
   padding: 1rem 2rem; 
 }
