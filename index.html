@@ -12,10 +12,10 @@
   <header class="top-nav">
     <a href="#" class="nav-link logo">A Trip to the Mountains&nbsp;</a>
     <nav id="site-nav" class="nav-wrap">
-      <a href="#" class="nav-link">News</a>
-      <a href="#" class="nav-link">About</a>
-      <a href="#" class="nav-link">Specials</a>
-      <a href="#" class="nav-link">Contact</a>
+      <a href="#" class="nav-link">Photos</a>
+      <a href="#" class="nav-link">Maps</a>
+      <a href="#" class="nav-link">Trail Cams</a>
+      <a href="#" class="nav-link">More Info</a>
     </nav>
     <a href="#" class="nav-link" id="trigram" onclick="navToggle()"></a>
   </header>
@@ -24,133 +24,167 @@
     </section>
     <section class="slideshow">
       <figure class="slides">
-        <img src="https://picsum.photos/seed/2nd/1440/520" />
+        <img src="https://picsum.photos/id/11/1440/520" />
       </figure>
       <figure class="slides">
-        <img src="https://picsum.photos/seed/3rd/1440/520" />
+        <img src="https://picsum.photos/id/10/1440/520" />
       </figure>
       <figure class="slides">
-        <img src="https://picsum.photos/seed/4th/1440/520" />
+        <img src="https://picsum.photos/id/432/1440/520" />
       </figure>
       <figure class="slides">
-        <img src="https://picsum.photos/seed/5th/1440/520" />
+        <img src="https://picsum.photos/id/66/1440/520" />
       </figure>
       <figure class="slides">
-        <img src="https://picsum.photos/seed/6th/1440/520" />
+        <img src="https://picsum.photos/id/177/1440/520" />
+      </figure>
+      <figure class="slides">
+        <img src="https://picsum.photos/id/198/1440/520" />
+      </figure>
+      <figure class="slides">
+        <img src="https://picsum.photos/id/243/1440/520" />
+      </figure>
+      <figure class="slides">
+        <img src="https://picsum.photos/id/416/1440/520" />
       </figure>
       <div class="controls">
         <button class="prev" onclick="plusSlides(-1)">&#8249;</button>
         <button class="next" onclick="plusSlides(1)">&#8250;</button>
       </div>
       <div class="caption-wrap">
-        <p id="caption"></p>
+        <p id="caption"> This is a caption</p>
       </div>
     </section>
-
-
-
-
+    <div class="thumbs">
+      <img class="thumb" src="https://picsum.photos/id/11/160/60" onclick="currentSlide(1)" 
+      alt="Mountain 1" />
+      <img class="thumb" src="https://picsum.photos/id/10/160/60" onclick="currentSlide(2)" 
+      alt="Mountain 2" />
+      <img class="thumb" src="https://picsum.photos/id/432/160/60" onclick="currentSlide(3)" 
+      alt="Mountain 3" />
+      <img class="thumb" src="https://picsum.photos/id/66/160/60" onclick="currentSlide(4)" 
+      alt="Mountain 4" />
+      <img class="thumb" src="https://picsum.photos/id/177/160/60" onclick="currentSlide(5)" 
+      alt="Mountain 5" />
+      <img class="thumb" src="https://picsum.photos/id/198/160/60" onclick="currentSlide(6)" 
+      alt="Mountain 6" />
+      <img class="thumb" src="https://picsum.photos/id/243/160/60" onclick="currentSlide(6)" 
+      alt="Mountain 7" />
+      <img class="thumb" src="https://picsum.photos/id/416/160/60" onclick="currentSlide(6)" 
+      alt="Mountain 8" />
+    </div>
 
     <section class="grid-cont">
       <article class="card">
         <div class="card-content">
-          <span class="close"><button class="close-btn">&times;</button></span>
+          <span class="close" onclick="x()"><button class="close-btn">&times;</button></span>
           <img src="https://picsum.photos/id/11/480/320" alt="alt-text reads . . .">
           <div class="card-text">
             <h4>Title</h4>
             <p>Text</p>
         </div>
       </div>
-      <button class="open-modal"> View <i data-feather="chevrons-up"></i></button>
+      <button class="open-modal" onclick="pop()"> View <i data-feather="chevrons-up"></i></button>
     </article><!--end article.card-->
 
     <article class="card">
       <div class="card-content">
-        <span class="close"><button class="close-btn">&times;</button></span>
+        <span class="close" onclick="x()"><button class="close-btn">&times;</button></span>
         <img src="https://picsum.photos/id/10/480/320" alt="alt-text reads . . .">
         <div class="card-text">
           <h4>Title</h4>
           <p>Text</p>
       </div>
     </div>
-    <button class="open-modal">View <i data-feather="chevrons-up"></i></button>
+    <button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
     </article><!--end article.card-->
 
     <article class="card">
       <div class="card-content">
-        <span class="close"><button class="close-btn">&times;</button></span>
+        <span class="close" onclick="x()"><button class="close-btn">&times;</button></span>
         <img src="https://picsum.photos/id/432/480/320" alt="alt-text reads . . .">
         <div class="card-text">
           <h4>Title</h4>
           <p>Text</p>
       </div>
     </div>
-    <button class="open-modal">View <i data-feather="chevrons-up"></i></button>
+    <button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
   </article><!--end article.card-->
 
   <article class="card">
     <div class="card-content">
-      <span class="close"><button class="close-btn">&times;</button></span>
+      <span class="close" onclick="x()"><button class="close-btn">&times;</button></span>
       <img src="https://picsum.photos/id/66/480/320" alt="alt-text reads . . .">
       <div class="card-text">
         <h4>Title</h4>
         <p>Text</p>
     </div>
   </div>
-  <button class="open-modal">View <i data-feather="chevrons-up"></i></button>
+  <button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
 </article><!--end article.card-->
 
 <article class="card">
   <div class="card-content">
-    <span class="close"><button class="close-btn">&times;</button></span>
+    <span class="close" onclick="x()"><button class="close-btn">&times;</button></span>
     <img src="https://picsum.photos/id/177/480/320" alt="alt-text reads . . .">
     <div class="card-text">
       <h4>Title</h4>
       <p>Text</p>
   </div>
 </div>
-<button class="open-modal">View <i data-feather="chevrons-up"></i></button>
+<button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
 </article><!--end article.card-->
 
 <article class="card">
   <div class="card-content">
-    <span class="close"><button class="close-btn">&times;</button></span>
+    <span class="close" onclick="x()"><button class="close-btn">&times;</button></span>
     <img src="https://picsum.photos/id/198/480/320" alt="alt-text reads . . .">
     <div class="card-text">
       <h4>Title</h4>
       <p>Text</p>
   </div>
 </div>
-<button class="open-modal">View <i data-feather="chevrons-up"></i></button>
+<button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
 </article><!--end article.card-->
 
 <article class="card">
   <div class="card-content">
-    <span class="close"><button class="close-btn">&times;</button></span>
+    <span class="close" onclick="x()"><button class="close-btn">&times;</button></span>
     <img src="https://picsum.photos/id/243/480/320" alt="alt-text reads . . .">
     <div class="card-text">
       <h4>Title</h4>
       <p>Text</p>
   </div>
 </div>
-<button class="open-modal">View <i data-feather="chevrons-up"></i></button>
+<button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
 </article><!--end article.card-->
 
 <article class="card">
   <div class="card-content">
-    <span class="close"><button class="close-btn">&times;</button></span>
+    <span class="close" onclick="x()"><button class="close-btn">&times;</button></span>
     <img src="https://picsum.photos/id/416/480/320" alt="alt-text reads . . .">
     <div class="card-text">
       <h4>Title</h4>
       <p>Text</p>
   </div>
 </div>
-<button class="open-modal">View <i data-feather="chevrons-up"></i></button>
+<button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
 </article><!--end article.card-->
 
     </section>
   </main>
-  <aside id="modal-wrap"></aside>
+  <aside id="modal-wrap">
+    <div class="card-content">
+      <span class="close" onclick="x()"><button class="close-btn">×</button></span>
+      <img src="https://picsum.photos/id/11/480/320" alt="alt-text reads . . .">
+      <div class="card-text">
+        <h4>Can't Work Like This</h4>
+        <p>Phasellus ut ipsum vel risus semper vulputate nec eu nisl. In fermentum lectus non nunc laoreet, non interdum justo aliquam. Sed imperdiet in quam nec luctus. Sed feugiat tincidunt lectus, ut commodo elit hendrerit quis. Nam interdum rhoncus erat, vitae aliquam quam auctor non.</p>
+        <p>Aliquam id pellentesque enim, eu tincidunt felis. Donec sagittis ipsum vel porttitor bibendum. Aenean eget facilisis eros. Vestibulum vel purus et dui varius finibus. Vivamus aliquet ligula et sem sollicitudin, sit amet dictum justo sodales.</p>
+      </div>     
+    </div>
+  </aside>
+
   <footer>
     <p>&copy;2022 Autumn Walker</p>
   </footer>

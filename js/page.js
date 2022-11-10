@@ -52,23 +52,12 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 } 
 
-
-document.querySelectorAll('.open-modal').forEach(openBtn => {
-  openBtn.addEventListener('click', event => {
-    let cardContent = event.target.previousElementSibling;
-    let modalContent = document.getElementById('modal-wrap');
-    modalContent.appendChild(cardContent.cloneNode(true));
-    modalContent.classList.add('show');
-  })
-});
-document.getElementById('modal-wrap').addEventListener('click', event => {
+function pop() {
   let modalContent = document.getElementById('modal-wrap');
-  let cardContent = modalContent.firstElementChild;
-  if (modalContent.className === 'show') {
-    modalContent.innerHTML = '';
-    modalContent.classList.remove('show');
-    event.preventDefault();
-    console.log(cardContent);
-    return false;
-  }
-});
+  modalContent.classList.add('show');
+}
+
+function x() {
+  let modalContent = document.getElementById('modal-wrap');
+  modalContent.classList.remove('show');
+}
