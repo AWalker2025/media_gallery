@@ -57,6 +57,15 @@ function pop() {
   modalContent.classList.add('show');
 }
 
+function expand(x) {
+  let photo = document.getElementById('photo');
+  photo.src = "https://picsum.photos/id/" + x + "/480/320";
+  let text = document.getElementById(x);
+  text.style.display = "block";
+  let modalContent = document.getElementById('modal-wrap');
+  modalContent.classList.add('show');
+  }
+
 function x() {
   let modalContent = document.getElementById('modal-wrap');
   modalContent.classList.remove('show');
