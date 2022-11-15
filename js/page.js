@@ -52,9 +52,11 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 } 
 
-function pop() {
+function pop(x) {
   let modalContent = document.getElementById('modal-wrap');
   modalContent.classList.add('show');
+  document.getElementById("picture").src = "https://picsum.photos/id/" + x + "/480/320";
+  document.getElementById(x).style.display = "block";
 }
 
 function expand(x) {
@@ -67,6 +69,15 @@ function expand(x) {
   }
 
 function x() {
+  let modalContent = document.getElementById('modal-wrap');
+  modalContent.classList.remove('show');  
+  var text = document.getElementsByClassName("none");
+  for (var i = 0; i < text.length; i++) {
+    console.log(i);
+    text[i].style.display = "none";
+  }
+}
+function closes(){
   let modalContent = document.getElementById('modal-wrap');
   modalContent.classList.remove('show');
 }

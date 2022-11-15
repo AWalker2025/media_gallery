@@ -374,4 +374,7 @@ footer p {
   .grid-cont {grid-template-columns: repeat(4, 1fr);}
 }
 
+.none {
+  display: none;
+}
 

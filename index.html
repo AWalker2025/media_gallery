@@ -84,7 +84,7 @@
             <p>Text</p>
         </div>
       </div>
-      <button class="open-modal" onclick="pop()"> View <i data-feather="chevrons-up"></i></button>
+      <button class="open-modal" onclick="pop('11')"> View <i data-feather="chevrons-up"></i></button>
     </article><!--end article.card-->
 
     <article class="card">
@@ -96,7 +96,7 @@
           <p>Text</p>
       </div>
     </div>
-    <button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
+    <button class="open-modal" onclick="pop('10')">View <i data-feather="chevrons-up"></i></button>
     </article><!--end article.card-->
 
     <article class="card">
@@ -108,7 +108,7 @@
           <p>Text</p>
       </div>
     </div>
-    <button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
+    <button class="open-modal" onclick="pop('432')">View <i data-feather="chevrons-up"></i></button>
   </article><!--end article.card-->
 
   <article class="card">
@@ -120,7 +120,7 @@
         <p>Text</p>
     </div>
   </div>
-  <button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
+  <button class="open-modal" onclick="pop('66')">View <i data-feather="chevrons-up"></i></button>
 </article><!--end article.card-->
 
 <article class="card">
@@ -132,7 +132,7 @@
       <p>Text</p>
   </div>
 </div>
-<button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
+<button class="open-modal" onclick="pop('177')">View <i data-feather="chevrons-up"></i></button>
 </article><!--end article.card-->
 
 <article class="card">
@@ -144,7 +144,7 @@
       <p>Text</p>
   </div>
 </div>
-<button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
+<button class="open-modal" onclick="pop('198')">View <i data-feather="chevrons-up"></i></button>
 </article><!--end article.card-->
 
 <article class="card">
@@ -156,7 +156,7 @@
       <p>Text</p>
   </div>
 </div>
-<button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
+<button class="open-modal" onclick="pop('243')">View <i data-feather="chevrons-up"></i></button>
 </article><!--end article.card-->
 
 <article class="card">
@@ -168,7 +168,7 @@
       <p>Text</p>
   </div>
 </div>
-<button class="open-modal" onclick="pop()">View <i data-feather="chevrons-up"></i></button>
+<button class="open-modal" onclick="pop('416')">View <i data-feather="chevrons-up"></i></button>
 </article><!--end article.card-->
 
     </section>
@@ -176,19 +176,49 @@
   <aside id="modal-wrap">
     <div class="card-content">
       <span class="close" onclick="x()"><button class="close-btn">×</button></span>
-      <img src="https://picsum.photos/id/480/320" alt="alt-text reads . . .">
+      <img src="" alt="alt-text reads . . ." id="picture">
       <div class="card-text none" id="11">
-        <h4>Can't Work Like This</h4>
+        <h4>Mountain 1</h4>
         <p>Phasellus ut ipsum vel risus semper vulputate nec eu nisl. In fermentum lectus non nunc laoreet, non interdum justo aliquam. Sed imperdiet in quam nec luctus. Sed feugiat tincidunt lectus, ut commodo elit hendrerit quis. Nam interdum rhoncus erat, vitae aliquam quam auctor non.</p>
         <p>Aliquam id pellentesque enim, eu tincidunt felis. Donec sagittis ipsum vel porttitor bibendum. Aenean eget facilisis eros. Vestibulum vel purus et dui varius finibus. Vivamus aliquet ligula et sem sollicitudin, sit amet dictum justo sodales.</p>
       </div>     
       <div class="card-text none" id="10">
-        <h4>Can't Work Like This</h4>
+        <h4>Mountain 2</h4>
         <p>Phasellus ut ipsum vel risus semper vulputate nec eu nisl. In fermentum lectus non nunc laoreet, non interdum justo aliquam. Sed imperdiet in quam nec luctus. Sed feugiat tincidunt lectus, ut commodo elit hendrerit quis. Nam interdum rhoncus erat, vitae aliquam quam auctor non.</p>
         <p>Aliquam id pellentesque enim, eu tincidunt felis. Donec sagittis ipsum vel porttitor bibendum. Aenean eget facilisis eros. Vestibulum vel purus et dui varius finibus. Vivamus aliquet ligula et sem sollicitudin, sit amet dictum justo sodales.</p>
-      </div>     
-    </div>
+      </div>  
+      <div class="card-text none" id="432">
+        <h4>Mountain 3</h4>
+        <p>Phasellus ut ipsum vel risus semper vulputate nec eu nisl. In fermentum lectus non nunc laoreet, non interdum justo aliquam. Sed imperdiet in quam nec luctus. Sed feugiat tincidunt lectus, ut commodo elit hendrerit quis. Nam interdum rhoncus erat, vitae aliquam quam auctor non.</p>
+        <p>Aliquam id pellentesque enim, eu tincidunt felis. Donec sagittis ipsum vel porttitor bibendum. Aenean eget facilisis eros. Vestibulum vel purus et dui varius finibus. Vivamus aliquet ligula et sem sollicitudin, sit amet dictum justo sodales.</p>
+      </div>  
+      <div class="card-text none" id="66">
+        <h4>Mountain 4</h4>
+        <p>Phasellus ut ipsum vel risus semper vulputate nec eu nisl. In fermentum lectus non nunc laoreet, non interdum justo aliquam. Sed imperdiet in quam nec luctus. Sed feugiat tincidunt lectus, ut commodo elit hendrerit quis. Nam interdum rhoncus erat, vitae aliquam quam auctor non.</p>
+        <p>Aliquam id pellentesque enim, eu tincidunt felis. Donec sagittis ipsum vel porttitor bibendum. Aenean eget facilisis eros. Vestibulum vel purus et dui varius finibus. Vivamus aliquet ligula et sem sollicitudin, sit amet dictum justo sodales.</p>
+      </div>  
+      <div class="card-text none" id="177">
+        <h4>Mountain 5</h4>
+        <p>Phasellus ut ipsum vel risus semper vulputate nec eu nisl. In fermentum lectus non nunc laoreet, non interdum justo aliquam. Sed imperdiet in quam nec luctus. Sed feugiat tincidunt lectus, ut commodo elit hendrerit quis. Nam interdum rhoncus erat, vitae aliquam quam auctor non.</p>
+        <p>Aliquam id pellentesque enim, eu tincidunt felis. Donec sagittis ipsum vel porttitor bibendum. Aenean eget facilisis eros. Vestibulum vel purus et dui varius finibus. Vivamus aliquet ligula et sem sollicitudin, sit amet dictum justo sodales.</p>
+      </div>  
+      <div class="card-text none" id="198">
+        <h4>Mountain 6</h4>
+        <p>Phasellus ut ipsum vel risus semper vulputate nec eu nisl. In fermentum lectus non nunc laoreet, non interdum justo aliquam. Sed imperdiet in quam nec luctus. Sed feugiat tincidunt lectus, ut commodo elit hendrerit quis. Nam interdum rhoncus erat, vitae aliquam quam auctor non.</p>
+        <p>Aliquam id pellentesque enim, eu tincidunt felis. Donec sagittis ipsum vel porttitor bibendum. Aenean eget facilisis eros. Vestibulum vel purus et dui varius finibus. Vivamus aliquet ligula et sem sollicitudin, sit amet dictum justo sodales.</p>
+      </div>  
+      <div class="card-text none" id="243">
+        <h4>Mountain 7</h4>
+        <p>Phasellus ut ipsum vel risus semper vulputate nec eu nisl. In fermentum lectus non nunc laoreet, non interdum justo aliquam. Sed imperdiet in quam nec luctus. Sed feugiat tincidunt lectus, ut commodo elit hendrerit quis. Nam interdum rhoncus erat, vitae aliquam quam auctor non.</p>
+        <p>Aliquam id pellentesque enim, eu tincidunt felis. Donec sagittis ipsum vel porttitor bibendum. Aenean eget facilisis eros. Vestibulum vel purus et dui varius finibus. Vivamus aliquet ligula et sem sollicitudin, sit amet dictum justo sodales.</p>
+      </div>  
+      <div class="card-text none" id="416">
+        <h4>Mountain 8</h4>
+        <p>Phasellus ut ipsum vel risus semper vulputate nec eu nisl. In fermentum lectus non nunc laoreet, non interdum justo aliquam. Sed imperdiet in quam nec luctus. Sed feugiat tincidunt lectus, ut commodo elit hendrerit quis. Nam interdum rhoncus erat, vitae aliquam quam auctor non.</p>
+        <p>Aliquam id pellentesque enim, eu tincidunt felis. Donec sagittis ipsum vel porttitor bibendum. Aenean eget facilisis eros. Vestibulum vel purus et dui varius finibus. Vivamus aliquet ligula et sem sollicitudin, sit amet dictum justo sodales.</p>
+      </div>  
   </aside>
+</section>
 
   <footer>
     <p>&copy;2022 Autumn Walker</p>
