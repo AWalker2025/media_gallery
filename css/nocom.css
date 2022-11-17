@@ -1,14 +1,15 @@
 :root {
-  --dark: rgb(60,60,60);
+  --dark: rgb(156,178,188);
   --ltmid: #DDD;
   --dkmid: #999;
-  --light: #F9F9F9;
+  --light: rgb(60,60,60);
   --accent: #ff7788;
 
 }
 body {
-  color: var(--dark); 
+  color: var(--dkmid); 
   line-height: 1.4; 
+  
 }
 
 a {color: var(--accent); font-weight: 500; text-decoration: none; transition: all .2s ease-in-out;}
@@ -130,7 +131,6 @@ main {
   cursor: pointer; 
   position: absolute; 
   width: auto; 
-  top: 40%; 
   color: var(--ltmid); 
   background-color: transparent; 
   border: none; 
@@ -162,16 +162,18 @@ main {
   width:inherit
 }
 .thumbs {
-  display:inline-block;
-  gap: 0.2rem;
+  display:flex;
+  /* gap: 0.2rem; */
   padding-top: 1rem;
-  width: 100%;
-  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap:wrap;
+ 
 }
-.thumbs img {
+.thumb {
   opacity: .5;
   cursor: pointer;
   transition: all .25s ease-in-out;
+  flex-basis: 12%;
   border: 2px solid;
 }
 .thumbs img:hover, img.active {
@@ -192,6 +194,8 @@ img.active {
 }
 @media screen and (min-width: 768px) { 
   .grid-cont {grid-template-columns: repeat(2, 1fr);}
+  .controls button { top:40%; }
+
 }
 @media screen and (min-width: 1280px) { 
   .grid-cont {grid-template-columns: repeat(3, 1fr);}
@@ -205,7 +209,8 @@ img.active {
   flex-direction: column; 
   border-radius: 8px;
   background-color: var(--dark); 
-  color:white;
+  color:var(--light);
+
 } 
 .card img { 
   width: 100%; 
@@ -235,7 +240,7 @@ img.active {
   margin: 2rem auto;
   padding: 1rem 2rem;
   cursor: pointer;
-  color: var(--dark);
+  color: var(--ltmid);
   font-weight: 500;
   transition: all .2s ease-in-out;
   background-color: var(--dkmid);
@@ -244,9 +249,10 @@ img.active {
   justify-content: space-evenly;
   align-items: center;
   text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .open-modal:hover {
-  color: var(--dark);
+  color: var(--ltmid);
   border: 2px dashed var(--dark);
 }
 .card:hover .open-modal:hover {
@@ -309,6 +315,7 @@ img.active {
   grid-gap: 0 2%;
   border: 2px solid var(--light);
   animation: fadein .3s ease-in-out;
+
 }
 #modal-wrap.show .card-content p {
   -webkit-line-clamp: none;
@@ -345,7 +352,7 @@ article .close {
 footer { 
   margin-top: 2rem; 
   background-color: var(--dark); 
-  color:white;
+  color: var(--light);
   padding: 1rem 2rem; 
   display: flex; 
   height: 6rem; 
